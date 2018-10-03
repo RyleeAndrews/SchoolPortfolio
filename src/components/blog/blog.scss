@@ -1,0 +1,39 @@
+ul {
+  list-style: none;
+}
+
+input {
+  display: block;
+}
+
+textarea {
+  height: 200px;
+  width: 25%;
+  border: solid black .1em;
+}
+
+.header {
+  margin-bottom: 100px;
+}
+
+.title {
+  width: 25%;
+  border: solid black .1em;
+  height: 25px;
+}
+
+.date {
+  font-size: 14px;
+}
+
+.author {
+  border: 1px solid black;
+}
+
+.content {
+  font-size: 18px;
+}
+
+.titleWords {
+  font-size: 35px;
+}
