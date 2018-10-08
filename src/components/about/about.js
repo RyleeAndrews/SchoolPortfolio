@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../header/header.js';
 import Footer from '../footer/footer.js';
+import { Link } from 'react-router-dom';
 import './about.scss';
 
 class About extends React.Component {
@@ -13,7 +14,35 @@ class About extends React.Component {
   render(){
     return(
       <div>
-        <Header/>
+        <div className="headAbout">
+          <div className="dropdown">
+            <Link to="/">
+              <button className="dropbtn">Home</button>
+            </Link>
+          </div>
+          <div className="dropdown">
+            <button className="dropbtn">Blog</button>
+            <div className="dropdown-content">
+              <Link to="/blog/new-post">New post</Link>
+            </div>
+          </div>
+          <div className="dropdown">
+            <button className="dropbtn">Projects</button>
+            <div className="dropdown-content">
+              <Link to="/reactprojects">React Projects</Link>
+            </div>
+          </div>
+          <div className="dropdown">
+            <Link to="/about">
+              <button className="dropbtn">About</button>
+            </Link>
+          </div>
+          <div className="dropdown">
+            <Link to="/contact">
+              <button className="dropbtn">Contact</button>
+            </Link>
+          </div>
+        </div>
         <h3> About Me </h3>
         <p> Hello my name is Rylee Andrews and I am full stack JavaScript developer from Northwest Montana.
             I enjoy spending time outdoors all season and spending winters waist deep in some Montana coldsmoke.
@@ -28,7 +57,7 @@ class About extends React.Component {
             sets me apart. I work well with others and want to see everyone grow. Working alone I set goals and achieve them.
             Working with clients I always want to make sure they are one hundred percent involved. With full understading
             we can work quickly and proficiently on the project. This portfolio will display what I am capable of and what
-            I can provide. 
+            I can provide.
         </p>
         <p>Beautiful layouts and simple designs is my personal flavor of designing.</p>
         <Footer/>
