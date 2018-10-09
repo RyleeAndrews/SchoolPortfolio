@@ -59,11 +59,10 @@ class About extends React.Component {
             sets me apart. I work well with others and want to see everyone grow. Working alone I set goals and achieve them.
             Working with clients I always want to make sure they are one hundred percent involved. With full understading
             we can work quickly and proficiently on the project. This portfolio will display what I am capable of and what
-            I can provide.
+            I can provide. Beautiful layouts and simple designs is my personal flavor of designing.
           </p>
           <Slider className="slider"/>
         </div>
-        <p className="aboutP">Beautiful layouts and simple designs is my personal flavor of designing.</p>
         <Footer/>
       </div>
     );
