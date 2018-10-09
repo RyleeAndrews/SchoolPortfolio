@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../header/header.js';
 import Footer from '../footer/footer.js';
+import Slider from '../slideshow/slider.js';
 import { Link } from 'react-router-dom';
 import './about.scss';
 
@@ -44,7 +45,8 @@ class About extends React.Component {
           </div>
         </div>
         <h3> About Me </h3>
-        <p> Hello my name is Rylee Andrews and I am full stack JavaScript developer from Northwest Montana.
+        <div className="wrapper">
+          <p className="aboutP"> Hello my name is Rylee Andrews and I am full stack JavaScript developer from Northwest Montana.
             I enjoy spending time outdoors all season and spending winters waist deep in some Montana coldsmoke.
             I have been involved in business and sold thousands of dollars in profit while interning as a
             branch manager. My involvings with coding started while I was living in one of the epicenters of it all, Seattle.
@@ -58,8 +60,10 @@ class About extends React.Component {
             Working with clients I always want to make sure they are one hundred percent involved. With full understading
             we can work quickly and proficiently on the project. This portfolio will display what I am capable of and what
             I can provide.
-        </p>
-        <p>Beautiful layouts and simple designs is my personal flavor of designing.</p>
+          </p>
+          <Slider className="slider"/>
+        </div>
+        <p className="aboutP">Beautiful layouts and simple designs is my personal flavor of designing.</p>
         <Footer/>
       </div>
     );

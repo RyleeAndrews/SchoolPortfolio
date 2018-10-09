@@ -1,7 +1,10 @@
 import React from 'react';
 import './slide.scss';
 import Slide1 from './slide1.js';
-
+import RightArrow from './rightArrow.js';
+import LeftArrow from './leftArrow.js';
+import Slide2 from './slide2.js';
+import Slide3 from './slide3.js';
 
 class Slider extends React.Component {
   constructor(props) {
@@ -13,15 +16,6 @@ class Slider extends React.Component {
       slideCount: 1,
     };
   }
-
-  UNSAFE_componentWillMount(){
-    this.timer = setInterval(this.nextSlide, 3000);
-  }
-
-  componentWillUnmount(){
-    clearInterval(this.timer);
-  }
-
 
   nextSlide() {
     this.setState({ slideCount: this.state.slideCount + 1 });
@@ -35,12 +29,38 @@ class Slider extends React.Component {
     return(
       <div>
         <div className="slider">
-        {
-          this.state.slideCount === 1 ?
-
-        }
+          {
+            this.state.slideCount === 1 ?
+              <div>
+                <Slide1/>
+                <RightArrow nextSlide={this.nextSlide}/>
+              </div>
+              :
+              null
+          }
+          {
+            this.state.slideCount === 2 ?
+              <div>
+                <Slide2 />
+                <RightArrow nextSlide={this.nextSlide}/>
+                <LeftArrow previousSlide={this.previousSlide}/>
+              </div>
+              :
+              null
+          }
+          {
+            this.state.slideCount === 3 ?
+              <div>
+                <Slide3 />
+                <LeftArrow previousSlide={this.previousSlide}/>
+              </div>
+              :
+              null
+          }
         </div>
       </div>
     );
   }
 }
+
+export default Slider;

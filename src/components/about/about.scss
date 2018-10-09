@@ -3,8 +3,23 @@ img {
   width: 25%;
 }
 
-p {
+.aboutP {
   font-family: 'Nunito Sans', sans-serif;
+  float: left;
+  width: 30%;
+  display: inline;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.slider {
+  float: right;
+  width: 69vw;
+  background-color: #FFFFFF;
+  height: 60vh;
+  margin-top: 1%;
 }
 
 .headAbout {
@@ -13,6 +28,7 @@ p {
   border: 2px solid #09990F;
   height: 100px;
 }
+
 .dropbtn {
     height: 50px;
     margin-left: 50px;

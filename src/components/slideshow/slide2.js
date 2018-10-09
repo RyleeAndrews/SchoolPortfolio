@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './slide.scss';
 
 
-class Slide1 extends React.Component {
+class Slide2 extends React.Component {
   constructor(props){
     super(props);
 
@@ -11,11 +11,11 @@ class Slide1 extends React.Component {
   }
   render(){
     return(
-      <div className="slide1">
-        <img className="pic" src={require('./lit.jpg')} />
+      <div className="slide2">
+        <img className="pic" src={require('./professional.jpg')} />
       </div>
     );
   }
 }
 
-export default Slide1;
+export default Slide2;
