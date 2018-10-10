@@ -41,7 +41,6 @@ class Slider extends React.Component {
             this.state.slideCount === 1 ?
               <div>
                 <Slide1/>
-                <RightArrow nextSlide={this.nextSlide}/>
               </div>
               :
               null
@@ -50,8 +49,6 @@ class Slider extends React.Component {
             this.state.slideCount === 2 ?
               <div>
                 <Slide2 />
-                <RightArrow nextSlide={this.nextSlide}/>
-                <LeftArrow previousSlide={this.previousSlide}/>
               </div>
               :
               null
@@ -60,7 +57,14 @@ class Slider extends React.Component {
             this.state.slideCount === 3 ?
               <div>
                 <Slide3 />
-                <LeftArrow previousSlide={this.previousSlide}/>
+              </div>
+              :
+              null
+          }
+          {
+            this.state.slideCount > 3 ?
+              <div>
+                <Slide3 />
               </div>
               :
               null
