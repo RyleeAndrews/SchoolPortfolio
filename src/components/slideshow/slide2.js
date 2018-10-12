@@ -12,7 +12,7 @@ class Slide2 extends React.Component {
   render(){
     return(
       <div className="slide2">
-        <img className="pic" src={require('./professional.jpg')} />
+        <img className="pic" src={require('./beach.jpg')} />
       </div>
     );
   }
