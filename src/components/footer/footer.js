@@ -10,7 +10,10 @@ class Footer extends React.Component {
   render(){
     return(
       <div className="foot">
-        Website made by Rylee Andrews copyright@2018
+        <div className="footwords"> Website made by Rylee Andrews copyright@2018 </div>
+        <a className="github" href="https://github.com/RyleeAndrews" rel="noopener noreferrer" target="_blank">
+          <i className="fab fa-github"></i>
+        </a>
       </div>
     );
   }
