@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import * as actions from '../blog/actions.js';
 import BlogForm from '../blog/blogForm.js';
 import BlogList from '../blog/blogList.js';
-import HomeHeader from '../header/homeHeader.js';
+import Header from '../header/header.js';
 import Footer from '../footer/footer.js';
 import './home.scss';
 
@@ -17,21 +17,37 @@ class Dashboard extends React.Component {
   }
 
   render(){
-    console.log(this.props.blog.map( (pub) => pub.publicView));
+
 
     return(
       <React.Fragment>
-        <div className="header">
-          <HomeHeader/>
+        <div>
+          <Header/>
+          <div className="hi">
+            full stack JavaScript developer from Northwest Montana
+          </div>
+          <br/>
+          <div className="small"> the beauty I see outside I transform onto the screen </div>
+          <div className="columnwrap">
+            <div className="column">
+              <img className="pichome" src={require('./buf.jpg')} />
+            </div>
+            <div className="column">
+              <img className="pichome" src={require('./valley.jpg')} />
+            </div>
+            <div className="column">
+              <img className="pichome" src={require('./mountains.jpg')} />
+            </div>
+          </div>
+          <div className="toolswrap">
+            <div className="tools">
+              <h3 className="html"> HTML </h3>
+              <ul>
 
+              </ul>
+            </div>
+          </div>
         </div>
-        <div className="blogs">
-          <BlogList blog={this.props.blog}/>
-        </div>
-        <div className="footer">
-          <Footer/>
-        </div>
-
       </React.Fragment>
     );
   }

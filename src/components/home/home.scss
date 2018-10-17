@@ -6,3 +6,58 @@
 .blogs {
   margin-top: 500px;
 }
+
+.hi {
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 2em;
+}
+
+.small {
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.3em;
+}
+
+.columnwrap {
+  width: 100%;
+  height: 30vh;
+  margin-top: 4%;
+}
+
+.column {
+  width: 30%;
+  height: 30vh;
+  display: inline-block;
+  margin-left: 2%;
+
+}
+
+.pichome {
+  width: 100%;
+  height: 30vh;
+  opacity: .7;
+  box-shadow: 8px 8px 2px rgba(38,37,38, 0.4);
+}
+
+.toolswrap {
+  width: 100%;
+  height: 40vh;
+  margin-top: 4%;
+}
+
+.tools {
+  width: 30%;
+  height: 40vh;
+  display: inline-block;
+  margin-left: 2%;
+  background-color: #2DA86B;
+  border-radius: 3px;
+  box-shadow: 8px 8px 2px rgba(38,37,38, 0.4);
+  opacity: .7;
+}
+
+.html {
+  text-align: center;
+  font-size: 2em;
+}

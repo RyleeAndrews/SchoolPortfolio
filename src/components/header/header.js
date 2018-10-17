@@ -13,32 +13,20 @@ class Header extends React.Component {
   render(){
     return(
 
-      <div className="header">
-        <div className="dropdown">
+      <div className="header1">
+        <div className="dropdown1">
           <Link to="/">
-            <button className="dropbtn">Home</button>
+            <button className="dropbtn1">Home</button>
           </Link>
         </div>
-        <div className="dropdown">
-          <button className="dropbtn">Blog</button>
-          <div className="dropdown-content">
-            <Link to="/blog/new-post">New post</Link>
-          </div>
-        </div>
-        <div className="dropdown">
-          <button className="dropbtn">Projects</button>
-          <div className="dropdown-content">
-            <Link to="/reactprojects">React Projects</Link>
-          </div>
-        </div>
-        <div className="dropdown">
+        <div className="dropdown1">
           <Link to="/about">
-            <button className="dropbtn">About</button>
+            <button className="dropbtn1">About</button>
           </Link>
         </div>
-        <div className="dropdown">
+        <div className="dropdown1">
           <Link to="/contact">
-            <button className="dropbtn">Contact</button>
+            <button className="dropbtn1">Contact</button>
           </Link>
         </div>
       </div>
