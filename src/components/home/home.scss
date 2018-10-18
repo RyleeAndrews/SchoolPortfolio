@@ -46,18 +46,79 @@
   margin-top: 4%;
 }
 
-.tools {
-  width: 30%;
-  height: 40vh;
+.html {
+  font-size: 2em;
   display: inline-block;
-  margin-left: 2%;
-  background-color: #2DA86B;
-  border-radius: 3px;
-  box-shadow: 8px 8px 2px rgba(38,37,38, 0.4);
-  opacity: .7;
+  margin-left: 6.5%;
 }
 
-.html {
+.toolsused {
   text-align: center;
+  margin-top: 4%;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 2em;
+}
+
+.fa-html5 {
+  margin-left: 10%;
+  font-size: 10em;
+  color: #e34f26;
+}
+
+.fa-html5:hover {
+  color: #EBAF00;
+}
+
+.css {
+  display: inline-block;
+  margin-left: 21%;
+  text-align: center;
+}
+
+.js {
+  display: inline-block;
+  text-align: center;
+  margin-left: 18%;
+}
+
+.fa-js-square {
+  font-size: 20em;
+  color: #f7df1e;
+}
+
+.fa-css3 {
+  font-size: 20em;
+}
+
+.fa-css3:hover {
+  color: #8773FF;
+}
+
+.hT {
+  font-family: 'Nunito Sans', sans-serif;
+  margin-left: 40%;
+  color: #e34f26;
+}
+
+.hT:hover {
+  color: #EBAF00;
+}
+
+.cT {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 2em;
+}
+
+.cT:hover {
+  color: #8773FF;
+}
+
+.jT {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 2em;
+  color: #f7df1e;
+}
+
+.jT:hover {
+  color: #FFFF93;
 }
