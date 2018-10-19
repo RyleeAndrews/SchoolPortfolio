@@ -123,7 +123,7 @@ class Dashboard extends React.Component {
               }
             </div>
           </div>
-          <div className="toolsused"> the tools I use to create </div>
+          <div className="toolsused"> the tools used to create </div>
           <div className="toolswrap">
             <a className="aH" href="https://en.wikipedia.org/wiki/HTML" rel="noopener noreferrer" target="_blank">
               <div className="html">
@@ -145,6 +145,15 @@ class Dashboard extends React.Component {
                 <i className="fab fa-js-square"></i>
               </div>
             </a>
+          </div>
+          <div className="framework">
+            <div className="framewords"> the framework used to add user functionality </div>
+            <i className="fab fa-react"></i>
+            <div className="reactwords"> <q> React is a declarative, efficient,
+              and flexible JavaScript library for building user interfaces.
+              It lets you compose complex UIs from small and
+              isolated pieces of code called “components”. </q>
+            </div>
           </div>
         </div>
       </React.Fragment>
