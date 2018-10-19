@@ -48,7 +48,7 @@ class Dashboard extends React.Component {
         <div>
           <Header/>
           <div className="hi">
-            full stack JavaScript developer from Northwest Montana
+            Full-Stack JavaScript developer from Northwest Montana
           </div>
           <br/>
           <div className="small"> the beauty I see outside I transform onto the screen </div>
@@ -146,14 +146,60 @@ class Dashboard extends React.Component {
               </div>
             </a>
           </div>
+          <div className="framewords"> the framework used to add user functionality </div>
           <div className="framework">
-            <div className="framewords"> the framework used to add user functionality </div>
-            <i className="fab fa-react"></i>
-            <div className="reactwords"> <q> React is a declarative, efficient,
+            <a className="aR" href="https://reactjs.org/tutorial/tutorial.html" rel="noopener noreferrer"
+              target="_blank">
+              <i className="fab fa-react"></i>
+              <div className="reactwords"> <q className="qR"> React is a declarative, efficient,
               and flexible JavaScript library for building user interfaces.
               It lets you compose complex UIs from small and
               isolated pieces of code called “components”. </q>
-            </div>
+              </div>
+            </a>
+          </div>
+          <div className="platform"> the platform used to handle web services </div>
+          <div className="node">
+            <a className="aN" href="https://en.wikipedia.org/wiki/Node.js" rel="noopener noreferrer"
+              target="_blank">
+              <i className="fab fa-node"></i>
+              <div className="nodewords"> <q className="qN"> Node.js lets developers use JavaScript to write Command Line tools and
+              for server-side scripting—running scripts server-side
+              to produce dynamic web page content before the page is sent to the user&#39;s web browser. </q>
+              </div>
+            </a>
+          </div>
+          <div className="ref"> what others have to say about me </div>
+          <div className="containerR">
+            <a className="aTagR" href="https://www.linkedin.com/in/ryleeandrews/" rel="noopener noreferrer"
+              target="_blank">
+              <i className="fas fa-code"></i>
+              <div className="cFQ">
+                <q className="quoterefs"> Rylee brings an amazing work ethic and a strong grasp of concepts and application.
+                  Rylee is able to take very minimal direction and dive deep, crafting solutions through not just research and trial/error,
+                  but though real evaluation of the concept and the end goal. This will translate really well into working in larger and
+                  more complicated codebases where legacy standards may still be the norm.
+                  I highly recommend Rylee as an asset to any development team. </q>
+                <br/>
+                <div className="john"> - John Cokos, Lead Instructor at Code Fellows </div>
+              </div>
+            </a>
+          </div>
+          <div className="containR2">
+            <a className="aTagR2" href="https://s3.amazonaws.com/referencebucky/Rylee+Reference+Letter.pdf"
+              rel="noopener noreferrer" target="_blank">
+              <i className="fas fa-paint-roller"></i>
+              <div className="cFQ2">
+                <q className="quoterefs2">
+                  Rylee Andrews has only worked for me a short time, but has already displayed his great resilience and
+                  tenacity. There have been uncontrollable, unfortunate situations that have been brought upon Rylee during
+                  his time working for me. Many individuals would crack under this amount of pressure,
+                  but Rylee has stayed positive and continues to power forward in life and his work.
+                </q>
+                <br/>
+                <div className="david"> -David Garvida, Former District Manager College Works Painting </div>
+              </div>
+            </a>
           </div>
         </div>
       </React.Fragment>
