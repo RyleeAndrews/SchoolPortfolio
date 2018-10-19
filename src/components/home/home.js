@@ -123,7 +123,7 @@ class Dashboard extends React.Component {
               }
             </div>
           </div>
-          <div className="toolsused"> the tools used to create </div>
+          <h3 className="toolsused"> the tools used to create </h3>
           <div className="toolswrap">
             <a className="aH" href="https://en.wikipedia.org/wiki/HTML" rel="noopener noreferrer" target="_blank">
               <div className="html">
@@ -146,7 +146,7 @@ class Dashboard extends React.Component {
               </div>
             </a>
           </div>
-          <div className="framewords"> the framework used to add user functionality </div>
+          <h3 className="framewords"> the framework used to add user functionality </h3>
           <div className="framework">
             <a className="aR" href="https://reactjs.org/tutorial/tutorial.html" rel="noopener noreferrer"
               target="_blank">
@@ -158,7 +158,7 @@ class Dashboard extends React.Component {
               </div>
             </a>
           </div>
-          <div className="platform"> the platform used to handle web services </div>
+          <h3 className="platform"> the platform used to handle web services </h3>
           <div className="node">
             <a className="aN" href="https://en.wikipedia.org/wiki/Node.js" rel="noopener noreferrer"
               target="_blank">
@@ -169,7 +169,7 @@ class Dashboard extends React.Component {
               </div>
             </a>
           </div>
-          <div className="ref"> what others have to say about me </div>
+          <h3 className="ref"> what others have to say about me </h3>
           <div className="containerR">
             <a className="aTagR" href="https://www.linkedin.com/in/ryleeandrews/" rel="noopener noreferrer"
               target="_blank">
