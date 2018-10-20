@@ -138,7 +138,7 @@ class Dashboard extends React.Component {
                 <i className="fab fa-css3"></i>
               </div>
             </a>
-            <a className="jC" href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" rel="noopener noreferrer"
+            <a className="jC" href="https://en.wikipedia.org/wiki/JavaScript" rel="noopener noreferrer"
               target="_blank">
               <div className="js">
                 <h4 className="jT"> JavaScript </h4>

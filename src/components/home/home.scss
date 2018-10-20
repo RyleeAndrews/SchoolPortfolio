@@ -1,13 +1,13 @@
 .hi {
   text-align: center;
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 2em;
+  font-size: 200%;
 }
 
 .small {
   text-align: center;
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 1.3em;
+  font-size: 130%;
 }
 
 .columnwrap {
@@ -40,22 +40,22 @@
 
 
 .html {
-  font-size: 2em;
   display: inline-block;
   margin-left: 6.5%;
+  font-size: 200%;
 }
 
 .toolsused {
   text-align: center;
   margin-top: 4%;
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 2em;
+  font-size: 200%;
   text-decoration: underline;
 }
 
 .fa-html5 {
   margin-left: 10%;
-  font-size: 10em;
+  font-size: 850%;
   color: #e34f26;
 }
 
@@ -72,11 +72,11 @@
 .js {
   display: inline-block;
   text-align: center;
-  margin-left: 19%;
+  margin-left: 16.5%;
 }
 
 .fa-js-square {
-  font-size: 20em;
+  font-size: 1650%;
   color: #f7df1e;
 }
 
@@ -85,7 +85,7 @@
 }
 
 .fa-css3 {
-  font-size: 20em;
+  font-size: 1650%;
 }
 
 .fa-css3:hover {
@@ -96,6 +96,7 @@
   font-family: 'Nunito Sans', sans-serif;
   margin-left: 40%;
   color: #e34f26;
+  font-size: 95%;
 }
 
 .hT:hover {
@@ -104,7 +105,7 @@
 
 .cT {
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 2em;
+  font-size: 200%;
 }
 
 .cT:hover {
@@ -113,7 +114,7 @@
 
 .jT {
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 2em;
+  font-size: 200%;
   color: #f7df1e;
 }
 
@@ -122,10 +123,11 @@
 }
 
 .fa-react {
-  font-size: 15em;
+  font-size: 1300%;
   color: #00d8ff;
   display: inline-block;
   margin-left: 5%;
+  margin-top: 1%;
 }
 
 .fa-react:hover {
@@ -146,7 +148,7 @@
 .framewords {
   text-align: center;
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 2em;
+  font-size: 200%;
   margin-top: 8%;
   text-decoration: underline;
 }
@@ -157,8 +159,8 @@
   width: 50%;
   float: right;
   margin-right: 20%;
-  margin-top: 5%;
-  font-size: 1.7em;
+  margin-top: 3%;
+  font-size: 170%;
   font-style: italic;
 }
 
@@ -169,7 +171,7 @@
 .platform {
   text-align: center;
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 2em;
+  font-size: 200%;
   margin-top: 6%;
   text-decoration: underline;
 }
@@ -186,7 +188,7 @@
 }
 
 .fa-node {
-  font-size: 18em;
+  font-size: 1300%;
   display: inline-block;
   float: right;
   color: #333333;
@@ -203,13 +205,13 @@
   width: 50%;
   float: left;
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 1.7em;
   margin-left: 16%;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 .qN {
   color: #215732;
+  font-size: 160%;
 }
 
 .qN:hover {
@@ -220,7 +222,7 @@
   text-align: center;
   margin-top: 5%;
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 2em;
+  font-size: 200%;
   margin-bottom: 6%;
   text-decoration: underline;
 }
@@ -238,8 +240,8 @@
 
 .quoterefs {
   margin-top: 3%;
-  width: 100%;
   display: inline-block;
+  font-size: 140%;
 }
 
 .aTagR {
@@ -249,7 +251,6 @@
 .cFQ {
   width: 50%;
   margin-top: 1%;
-  font-size: 1.7em;
   font-family: 'Nunito Sans', sans-serif;
   float: right;
   text-align: center;
@@ -261,7 +262,7 @@
 .fa-code {
   float: left;
   display: inline-block;
-  font-size: 15em;
+  font-size: 1300%;
   margin-top: 4%;
   margin-left: 6%;
   color: #C93A15;
@@ -278,11 +279,13 @@
 .john {
   margin-top: 2%;
   color: black;
+  font-size: 140%;
 }
 
 .david {
   margin-top: 2%;
   color: black;
+  font-size: 140%;
 }
 
 .containR2 {
@@ -298,8 +301,7 @@
 
 .cFQ2 {
   width: 50%;
-  margin-top: 3%;
-  font-size: 1.7em;
+  margin-top: 2%;
   font-family: 'Nunito Sans', sans-serif;
   margin-left: 9%;
   float: left;
@@ -315,7 +317,7 @@
 .fa-paint-roller {
   display: inline-block;
   float: right;
-  font-size: 15em;
+  font-size: 1300%;
   margin-top: 3%;
   margin-right: 12%;
   color: #3C85DE;
@@ -323,4 +325,16 @@
 
 .fa-paint-roller:hover {
   color: #45D0FF;
+}
+
+.quoterefs2 {
+  font-size: 140%;
+}
+
+@media only screen and (max-width: 500px){
+  .fa-html5 {
+    margin-left: 10%;
+    font-size: 250%;
+    color: #e34f26;
+  }
 }
