@@ -48,7 +48,7 @@ class Projects extends React.Component {
             <p className="tsdwords">
               Business page for Total Screen Design and Embroidery in Polson, Montana. The user of the page can log in and
               create an account. Once in the user can go to their profile and update their information, place an order and
-              see their past orders as well as update their profile info. The page is made with React.js while the backend
+              see their past orders as well as update their profile info. It is currently in the design process. The page is made with React.js while the backend
               platform is Node.js.
             </p>
           </a>
