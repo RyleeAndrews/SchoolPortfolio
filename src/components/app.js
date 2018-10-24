@@ -5,6 +5,8 @@ import ReactProjects from './header/reactProjects.js';
 import Home from './home/home.js';
 import About from './about/about.js';
 import Contact from './contact/contact.js';
+import Features from './features/features.js';
+import Projects from './projects/projects.js';
 
 import Blog from './blog/dashboard.js';
 
@@ -23,8 +25,8 @@ class App extends React.Component {
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
           <Route exact path='/contact' component={Contact} />
-          <Route exact path='/blog/new-post' component={Blog} />
-          <Route exact path='/reactprojects' component={ReactProjects} />
+          <Route exact path='/features' component={Features} />
+          <Route exact path='/projects' component={Projects} />
         </main>
       </React.Fragment>
     );

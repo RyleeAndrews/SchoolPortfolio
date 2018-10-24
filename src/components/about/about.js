@@ -43,23 +43,7 @@ class About extends React.Component {
   render(){
     return(
       <div>
-        <div className="headAbout">
-          <div className="dropdown">
-            <Link to="/">
-              <button className="dropbtn">Home</button>
-            </Link>
-          </div>
-          <div className="dropdown">
-            <Link to="/about">
-              <button className="dropbtn">About</button>
-            </Link>
-          </div>
-          <div className="dropdown">
-            <Link to="/contact">
-              <button className="dropbtn">Contact</button>
-            </Link>
-          </div>
-        </div>
+        <Header />
         <h3> About Me </h3>
         <div className="wrapper">
           <p className="aboutP1"> Hello my name is Rylee Andrews and I am full stack JavaScript developer from Northwest Montana.
