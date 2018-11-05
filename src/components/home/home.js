@@ -10,34 +10,39 @@ class Dashboard extends React.Component {
   constructor(props){
     super(props);
     this.nextSlide = this.nextSlide.bind(this);
+    this.timerSlide = this.timerSlide.bind(this);
+    this.stopTimer = this.stopTimer.bind(this);
     this.previousSlide = this.previousSlide.bind(this);
-    this.clearIntervalSet = this.clearIntervalSet.bind(this);
-    this.setStateBack = this.setStateBack.bind(this);
+    this.restart = this.restart.bind(this);
+    this.endRestart = this.endRestart.bind(this);
+
     this.state = {
       slideCount: 1,
     };
   }
 
-  UNSAFE_componentWillMount(){
-    if(this.state.slideCount < 4){
-      this.timer = setInterval(this.nextSlide, 4000);
-    }
+  endRestart(){
+    clearInterval(this.timer2);
   }
 
-  clearIntervalSet(){
+  previousSlide(){
+    this.setState({slideCount: this.state.slideCount - 2});
+  }
+
+  timerSlide(){
+    this.timer = setInterval(this.nextSlide, 4000);
+  }
+
+  restart(){
+    this.timer2 = setInterval(this.previousSlide,4000);
+  }
+
+  stopTimer(){
     clearInterval(this.timer);
-  }
-
-  setStateBack(){
-    this.setState({slideCount: this.state.slideCount === 1});
   }
 
   nextSlide() {
     this.setState({ slideCount: this.state.slideCount + 1 });
-  }
-
-  previousSlide() {
-    this.setState({ slideCount: this.state.slideCount - 1 });
   }
 
   render(){
@@ -55,7 +60,11 @@ class Dashboard extends React.Component {
           <div className="columnwrap">
             <div className="column">
               { this.state.slideCount === 1 ?
-                <img className="pichome" src={require('./buf.jpg')} />
+                <div>
+                  {this.endRestart()}
+                  {this.timerSlide()}
+                  <img className="pichome" src={require('./buf.jpg')} />
+                </div>
                 :
                 null
               }
@@ -65,15 +74,13 @@ class Dashboard extends React.Component {
                 null
               }
               { this.state.slideCount === 3 ?
-                <img className="pichome" src={require('./palouse.jpg')} />
+                <div>
+                  {this.stopTimer()}
+                  <img className="pichome" src={require('./palouse.jpg')} />
+                  {this.restart()}
+                </div>
                 :
                 null
-              }
-              { this.state.slideCount === 4 ?
-                this.setStateBack()
-                :
-                null
-
               }
             </div>
             <div className="column">
@@ -92,12 +99,6 @@ class Dashboard extends React.Component {
                 :
                 null
               }
-              { this.state.slideCount === 4 ?
-                this.setStateBack()
-                :
-                null
-
-              }
             </div>
             <div className="column">
               { this.state.slideCount === 1 ?
@@ -114,12 +115,6 @@ class Dashboard extends React.Component {
                 <img className="pichome" src={require('./cascade.jpg')} />
                 :
                 null
-              }
-              { this.state.slideCount === 4 ?
-                this.setStateBack()
-                :
-                null
-
               }
             </div>
           </div>

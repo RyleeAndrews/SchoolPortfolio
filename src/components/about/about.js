@@ -9,38 +9,29 @@ class About extends React.Component {
   constructor(props){
     super(props);
 
-
+    this.slideTimer = this.slideTimer.bind(this);
     this.nextSlide = this.nextSlide.bind(this);
-    this.previousSlide = this.previousSlide.bind(this);
-    this.clearIntervalSet = this.clearIntervalSet.bind(this);
-    this.setStateBack = this.setStateBack.bind(this);
+    this.unTimer = this.unTimer.bind(this);
+
     this.state = {
       slideCount: 1,
     };
   }
 
-  UNSAFE_componentWillMount(){
-    if(this.state.slideCount < 4){
-      this.timer = setInterval(this.nextSlide, 4000);
-    }
+  slideTimer(){
+    this.timer = setInterval(this.nextSlide, 4000);
   }
 
-  clearIntervalSet(){
+  nextSlide(){
+    this.setState({ slideCount: this.state.slideCount + 1});
+  }
+
+  unTimer(){
     clearInterval(this.timer);
   }
 
-  setStateBack(){
-    this.setState({slideCount: this.state.slideCount === 1});
-  }
-
-  nextSlide() {
-    this.setState({ slideCount: this.state.slideCount + 1 });
-  }
-
-  previousSlide() {
-    this.setState({ slideCount: this.state.slideCount - 1 });
-  }
   render(){
+
     return(
       <div>
         <Header />
@@ -51,7 +42,10 @@ class About extends React.Component {
           </p>
           {
             this.state.slideCount === 1 ?
-              <img className="picabout" src={require('./powpow.jpg')} />
+              <div>
+                {this.slideTimer()}
+                <img className="picabout" src={require('./powpow.jpg')} />
+              </div>
               :
               null
           }
@@ -63,16 +57,14 @@ class About extends React.Component {
           }
           {
             this.state.slideCount === 3 ?
-              <img className="picabout" src={require('./skiskiski.jpg')} />
+              <div>
+                {this.unTimer()}
+                <img className="picabout" src={require('./skiskiski.jpg')} />
+              </div>
               :
               null
           }
-          {
-            this.state.slideCount === 4 ?
-              this.setStateBack()
-              :
-              null
-          }
+
         </div>
         <div className="wrapper2">
           <p className="aboutP2">
@@ -124,6 +116,7 @@ class About extends React.Component {
               :
               null
           }
+
         </div>
         <div className="wrapper4">
           <p className="aboutP4">
