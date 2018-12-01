@@ -4,7 +4,7 @@ const express = require('express');
 
 const app = express();
 
-app.use(express.static(`${__dirname}/bundle`));
+app.use(express.static(`${__dirname}/build/src/index.html`));
 app.use('*', (req, res) => res.send('/'));
 
 app.listen(process.env.PORT || 8080, () => {
