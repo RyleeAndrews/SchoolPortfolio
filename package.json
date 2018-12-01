@@ -43,6 +43,7 @@
     "jest-css-modules": "^1.1.0",
     "mini-css-extract-plugin": "^0.4.3",
     "node-sass": "^4.9.3",
+    "path": "^0.12.7",
     "react": "^16.5.2",
     "react-browser-router": "^2.1.2",
     "react-cookies": "^0.1.0",
