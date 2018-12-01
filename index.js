@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.static((`${__dirname}/build`)));
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname+ '/build/src/index.html'));
+  res.sendFile(`${__dirname}'/build/src/index.html`);
 });
 
 app.listen(process.env.PORT || 8080, () => {
