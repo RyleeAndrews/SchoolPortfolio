@@ -4,7 +4,7 @@ const express = require('express');
 
 const app = express();
 
-app.use(express.static(`${__dirname}/src`));
+app.use(express.static(`${__dirname}/build/src`));
 app.use('*', (req, res) => res.send('/'));
 
 app.listen(process.env.PORT || 8080, () => {
