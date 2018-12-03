@@ -5,8 +5,8 @@ const path = require('path');
 const app = express();
 
 app.use(express.static((`${__dirname}/build`)));
-app.get('/about', (req, res) => {
-  res.sendFile('./src/components/about/about.js');
+app.get('*', (req, res) => {
+  res.send('/index.html');
 });
 
 app.listen(process.env.PORT || 8080, () => {
