@@ -6,6 +6,7 @@ import Home from './home/home.js';
 import About from './about/about.js';
 import Contact from './contact/contact.js';
 import Projects from './projects/projects.js';
+import Features from './features/features.js';
 import Category from './category/category.js';
 import Travel from './category/travel.js';
 import Beer from './category/beer.js';
@@ -31,6 +32,7 @@ class App extends React.Component {
           <Route exact path='/about' component={About} />
           <Route exact path='/contact' component={Contact} />
           <Route exact path='/projects' component={Projects} />
+          <Route exact path='/adobespark' component={Features} />
           <Route exact path='/category' component={Category} />
           <Route exact path='/beer' component={Beer} />
           <Route exact path='/travel' component={Travel} />

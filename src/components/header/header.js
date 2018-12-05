@@ -25,7 +25,7 @@ class Header extends React.Component {
           </Link>
         </div>
         <div className="dropdown1">
-          <Link to="/features">
+          <Link to="/adobespark">
             <button className="dropbtn1">Adobe Spark Story</button>
           </Link>
         </div>
