@@ -39,6 +39,19 @@ class Header extends React.Component {
             <button className="dropbtn1">Contact</button>
           </Link>
         </div>
+        <div className="dropdown1">
+          <Link to="/category">
+            <button className="dropbtn1"> Categories </button>
+          </Link>
+          <div className="dropdown1-content">
+            <Link to="/beer">
+              <div> Beer </div>
+            </Link>
+            <Link to="/travel">
+              <div> Travel </div>
+            </Link>
+          </div>
+        </div>
       </div>
     );
   }

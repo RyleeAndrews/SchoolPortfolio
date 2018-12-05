@@ -1,0 +1,72 @@
+
+
+.categories {
+  width: 100%;
+  display: inline-block;
+}
+
+.beer {
+  width: 40%;
+  height: 60vh;
+  border: 2px solid black;
+  display: inline-block;
+  margin-left: 6%
+}
+
+.beer:hover {
+  opacity: .5;
+}
+
+.travel {
+  width: 40%;
+  height: 60vh;
+  border: 2px solid black;
+  display: inline-block;
+  margin-left: 6%
+}
+
+.travel:hover {
+  opacity: .5;
+}
+
+.travelPic {
+  height: 60vh;
+  width: 100%;
+}
+
+.catTitle {
+  margin-left: 37%;
+  font-family: 'Merriweather', serif;
+  font-size: 250%;
+  color: black;
+}
+
+.catTitle2 {
+  font-family: 'Merriweather', serif;
+  font-size: 250%;
+  margin-left: 45%;
+  color: black;
+}
+
+.beerPic {
+  height: 60vh;
+  width: 100%;
+}
+
+.benji {
+  display: none;
+}
+
+.blogPhoto {
+  transform: rotate(90deg);
+}
+
+.hashtags {
+  display: inline-block;
+  font-size: 125%;
+}
+
+.hashbtn {
+  margin-left: 5%;
+  width: 10%;
+}
